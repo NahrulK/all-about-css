@@ -61,8 +61,11 @@ body{
 	background-color: #fff;
 }
 
+/* css Header */
+
 .header {
 	padding: 20px;
+	padding-bottom: 10px;
 }
 
 .header .judul {
@@ -74,5 +77,37 @@ body{
 .header ul li {
 	display: inline-block;
 	margin-top: 20px;
+	margin-right: 5px;
+
 
 }
+
+.header a {
+	text-decoration: none;
+	color: salmon;
+	padding: 3px;
+}
+
+.header a:hover {
+	background-color: skyblue;
+	color: white;
+}
+
+/* Penutup Header  */
+
+/* Hero  */
+
+.hero {
+	height: 280px;
+	background-image: url("img/hero.webp");
+	background-size: cover;
+	background-position: 0 -30px;
+	border-bottom: 5px solid skyblue;
+	border-top: 5px solid salmon;
+}
+
+/* Penutup Hero */
+
+/* Content */
+
+/* Penutup Content */
