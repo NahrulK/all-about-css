@@ -58,10 +58,11 @@ body{
 
 .container {
 	padding : 30px;
-	width: 700px;
+	width: 960px;
 	/* height: 1000px; */
 	margin: auto;
 	background-color: #fff;
+	box-sizing: border-box;
 }
 
 /* css Header */
@@ -111,36 +112,70 @@ body{
 
 /* Penutup Hero */
 
-/* Content */
+/* Main */
 
-.konten h2 {
+.main  {
+	width: 600px;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: justify;
+	float: left;
+}
+
+.main h2 {
 	font-size: 28px;
 	padding-top: 20px;
 }
 
-.konten .penulis {
+.main .penulis {
 	font-size: 11px;
 	margin-top: 5px;
 }
 
-.konten .penulis a {
+.main .penulis a {
 	text-decoration: none;
 	color: salmon;
 }
 
-.konten .penulis a:hover {
+.main .penulis a:hover {
 	font-size: 13px;
 	background-color: lightskyblue;
 	color: white;
 }
 
-.konten p {
-	margin-top: 5px;
-	font-size: 14px;
+.main p {
+	margin-top: 15px;
+	font: 12px/18px arial ;
 }
 
 
-/* Penutup Content */
+/* Penutup Main */
+
+/* Sidebar */
+
+.sidebar {
+	width: 300px;
+	float: right;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.sidebar img {
+	width: 100px;
+	height: 100px;
+	float: left;
+	padding-right: 20px;
+}
+
+.sidebar h3 {
+	font-size: 18px;
+}
+
+.sidebar p {
+	font-size: 12px;
+}
+
+/* Penutup Sidebar */
 
 /* Footer */
 
@@ -157,3 +192,19 @@ body{
 	text-align: center;
 }
 /* Penutup footer */
+
+/* Micro clear fix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
