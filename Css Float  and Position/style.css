@@ -56,13 +56,39 @@ body{
     color: #333;
 }
 
+.top-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background-color: lightskyblue;
+	border-bottom: 3px solid salmon;
+	z-index: 9999;
+}
+
 .container {
 	padding : 30px;
 	width: 960px;
 	/* height: 1000px; */
-	margin: auto;
+	margin: 80px auto;
 	background-color: #fff;
 	box-sizing: border-box;
+	position: relative;
+}
+
+/* Twitter png */
+
+.twitter {
+	width: 200px;
+	height: 200px;
+	background-image: url(img/twitter.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -9999px;
+	position: absolute;
+	top:-22px;
+	right: -28px;
 }
 
 /* css Header */
