@@ -1,0 +1,12 @@
+/* Font Familly */
+
+@font-face {
+    font-family: "Bebas";
+    src: url(../fonts/bebasneue-regular-webfont.woff) format("woff");
+}
+
+/* Style Utama */
+
+body {
+    font: 18px/36px 'Bebas', cursive;
+}
