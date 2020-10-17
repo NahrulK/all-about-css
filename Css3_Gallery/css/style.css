@@ -83,7 +83,7 @@ h1 {
     left: 0;
     z-index: 9999;
     background: rgba(0,0,0,0);
-    transition: 1s;
+    transition: .3s;
     text-align: center;
     
     box-sizing: border-box;
@@ -129,7 +129,38 @@ h1 {
 
 /* Akhir Full photo */
 
+/* Navigasi */
+
+.next , .prev {
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/next.png);
+    position: absolute;
+    top : 40%;
+    margin-left: 50px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(../img/previous.png);
+    margin-left: -125px;
+}
+
+.gallery .overlay:target .next , .gallery .overlay:target .prev {
+    animation: fadeAjah .5s .5s forwards;
+}
+
 /* animasi */
+
+@keyframes fadeAjah {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 @keyframes zoomDanFade {
     0% {
